@@ -30,5 +30,8 @@
     "stream",
     "readable"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@stream-toolbox/search": "*"
+  }
 }

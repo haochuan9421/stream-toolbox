@@ -30,6 +30,9 @@
     "file-upload"
   ],
   "license": "MIT",
+  "dependencies": {
+    "@stream-toolbox/search": "*"
+  },
   "devDependencies": {
     "busboy": "^1.6.0",
     "formidable": "^2.1.1"

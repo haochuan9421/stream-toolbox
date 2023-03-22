@@ -31,5 +31,8 @@
     "split",
     "buffer"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@stream-toolbox/search": "*"
+  }
 }
