@@ -298,6 +298,10 @@ function multipart(rs: Readable, opts?: opts): Promise<arrayResult | commonResul
         if (file) {
           file.emit("error", new Error("Request socket closed"));
         }
+        if (state === STATES.POST_BOUNDARY && Buffer.concat(tmpChunks).equals(Buffer.from("--"))) {
+          state = STATES.END;
+          Promise.all(parts).then(resolve);
+        }
         if (state !== STATES.END) {
           reject(new Error("Incomplete multipart/form-data"));
         }
@@ -335,12 +339,12 @@ function multipart(rs: Readable, opts?: opts): Promise<arrayResult | commonResul
       _reject(err);
     }
     rs.on("data", onData);
-    rs.on("error", reject);
-    rs.on("end", onEnd); // 只会在请求结束时触发，如果请求被取消了，这个事件不会触发
+    rs.once("error", reject);
+    rs.once("end", onEnd); // 只会在请求结束时触发，如果请求被取消了，这个事件不会触发
     if (fromV16) {
-      rs.on("close", onEnd); // 从 Node.js v16 开始，这个事件会在请求完成时触发，无论请求是成功还是被取消（v16之前是在底层的 socket 关闭时触发，keep-alive 会在多个请求间复用 socket）
+      rs.once("close", onEnd); // 从 Node.js v16 开始，这个事件会在请求完成时触发，无论请求是成功还是被取消（v16之前是在底层的 socket 关闭时触发，keep-alive 会在多个请求间复用 socket）
     } else {
-      rs.on("aborted", onEnd); // 请求被取消时触发，但是从 v17.0.0, v16.12.0 开始被废弃了
+      rs.once("aborted", onEnd); // 请求被取消时触发，但是从 v17.0.0, v16.12.0 开始被废弃了
     }
   }).then((parts) => {
     const arrayResult: arrayResult = {};

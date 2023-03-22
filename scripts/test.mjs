@@ -24,8 +24,13 @@ outer: for (const pkg of await readdir(resolve(`packages`), { withFileTypes: tru
     const testDir = resolve(`packages/${pkg.name}/test`);
     // 遍历子包中的所有测试用例
     for (const testCase of await readdir(testDir, { withFileTypes: true })) {
-      if (!testCase.isFile() || !testCase.name.endsWith(".js")) {
+      if (!testCase.isFile() || !(testCase.name.endsWith(".js") || testCase.name.endsWith(".mjs"))) {
         continue; // 一个 js 文件代表一个测试用例
+      }
+
+      // mjs 文件只使用最新版本进行测试
+      if (testCase.name.endsWith(".mjs") && runtime !== latestRuntime) {
+        continue;
       }
 
       const { status, stderr } = spawnSync(runtime, [resolve(`packages/${pkg.name}/test/${testCase.name}`)], {
