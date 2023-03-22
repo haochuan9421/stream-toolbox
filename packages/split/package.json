@@ -1,7 +1,7 @@
 {
   "name": "@stream-toolbox/split",
   "description": "Split a readable stream into multiple readable streams by size or Buffer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "main": "index.js",
   "types": "index.d.ts",

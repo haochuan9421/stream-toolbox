@@ -1,7 +1,7 @@
 {
   "name": "@stream-toolbox/replace",
   "description": "Replace the given Buffer in a readable stream with another Buffer.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "main": "index.js",
   "types": "index.d.ts",
