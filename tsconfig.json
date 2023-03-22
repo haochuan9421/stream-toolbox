@@ -1,0 +1,40 @@
+{
+  "include": [],
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "CommonJS",
+    "declaration": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "removeComments": true
+  },
+  "references": [
+    {
+      "path": "packages/search"
+    },
+    {
+      "path": "packages/replace"
+    },
+    {
+      "path": "packages/split"
+    },
+    {
+      "path": "packages/join"
+    },
+    {
+      "path": "packages/zero"
+    },
+    {
+      "path": "packages/null"
+    },
+    {
+      "path": "packages/limit"
+    },
+    {
+      "path": "packages/monit"
+    },
+    {
+      "path": "packages/multipart"
+    }
+  ]
+}

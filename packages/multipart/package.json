@@ -1,0 +1,37 @@
+{
+  "name": "@stream-toolbox/multipart",
+  "description": "A streaming parser for multipart/form-data type request body.",
+  "version": "1.0.0",
+  "private": false,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "author": "haochuan9421 <hc199421@gmail.com>",
+  "homepage": "https://github.com/haochuan9421/stream-toolbox/tree/master/packages/multipart",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:haochuan9421/stream-toolbox.git",
+    "directory": "packages/multipart"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "stream-toolbox",
+    "multipart",
+    "form-data",
+    "file-upload"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "busboy": "^1.6.0",
+    "formidable": "^2.1.1"
+  }
+}

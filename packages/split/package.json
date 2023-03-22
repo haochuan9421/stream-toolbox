@@ -1,0 +1,35 @@
+{
+  "name": "@stream-toolbox/split",
+  "description": "Split a readable stream into multiple readable streams by size or Buffer",
+  "version": "1.0.0",
+  "private": false,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "author": "haochuan9421 <hc199421@gmail.com>",
+  "homepage": "https://github.com/haochuan9421/stream-toolbox/tree/master/packages/split",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:haochuan9421/stream-toolbox.git",
+    "directory": "packages/split"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "stream-toolbox",
+    "split",
+    "readable",
+    "stream",
+    "split",
+    "buffer"
+  ],
+  "license": "MIT"
+}

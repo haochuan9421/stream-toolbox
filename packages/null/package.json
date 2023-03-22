@@ -1,0 +1,37 @@
+{
+  "name": "@stream-toolbox/null",
+  "description": "Create a writable stream that will swallow all data, somewhat similar to /dev/null, but with some extra features.",
+  "version": "1.0.0",
+  "private": false,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "author": "haochuan9421 <hc199421@gmail.com>",
+  "homepage": "https://github.com/haochuan9421/stream-toolbox/tree/master/packages/null",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:haochuan9421/stream-toolbox.git",
+    "directory": "packages/null"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "stream-toolbox",
+    "null",
+    "writable",
+    "stream",
+    "/dev/null"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@stream-toolbox/zero": "*"
+  }
+}

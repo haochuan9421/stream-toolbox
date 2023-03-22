@@ -1,0 +1,28 @@
+{
+  "name": "stream-toolbox",
+  "description": "A toolbox for handling Node.js stream",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc --build --verbose",
+    "clean": "rm -rf packages/*/index.js packages/*/index.d.ts packages/*/tsconfig.tsbuildinfo",
+    "create": "node scripts/create.mjs",
+    "test": "node scripts/test.mjs"
+  },
+  "author": "haochuan9421 <hc199421@gmail.com>",
+  "homepage": "https://github.com/haochuan9421/stream-toolbox",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:haochuan9421/stream-toolbox.git"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "semver": "^7.3.8",
+    "tar": "^6.1.13",
+    "typescript": "^4.9.5"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT"
+}

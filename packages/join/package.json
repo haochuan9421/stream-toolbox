@@ -1,0 +1,35 @@
+{
+  "name": "@stream-toolbox/join",
+  "description": "Join multiple readable streams (or Buffers) into one readable stream.",
+  "version": "1.0.0",
+  "private": false,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "author": "haochuan9421 <hc199421@gmail.com>",
+  "homepage": "https://github.com/haochuan9421/stream-toolbox/tree/master/packages/join",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:haochuan9421/stream-toolbox.git",
+    "directory": "packages/join"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "stream-toolbox",
+    "join",
+    "readable",
+    "stream",
+    "buffer",
+    "concat"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@stream-toolbox/zero",
+  "description": "Create a readable stream that will continuously generate data, somewhat similar to /dev/zero, but with some extra features.",
+  "version": "1.0.0",
+  "private": false,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "author": "haochuan9421 <hc199421@gmail.com>",
+  "homepage": "https://github.com/haochuan9421/stream-toolbox/tree/master/packages/zero",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:haochuan9421/stream-toolbox.git",
+    "directory": "packages/zero"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "stream-toolbox",
+    "zero",
+    "readable",
+    "stream",
+    "/dev/zero"
+  ],
+  "license": "MIT"
+}

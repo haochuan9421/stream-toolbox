@@ -1,0 +1,38 @@
+{
+  "name": "@stream-toolbox/search",
+  "description": "Search for the given Buffer in a sequence of data (readable stream)",
+  "version": "1.0.0",
+  "private": false,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "author": "haochuan9421 <hc199421@gmail.com>",
+  "homepage": "https://github.com/haochuan9421/stream-toolbox/tree/master/packages/search",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:haochuan9421/stream-toolbox.git",
+    "directory": "packages/search"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "stream-toolbox",
+    "search",
+    "readable",
+    "stream",
+    "horspool",
+    "boyer-moore-horspool"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "streamsearch": "^1.1.0"
+  }
+}

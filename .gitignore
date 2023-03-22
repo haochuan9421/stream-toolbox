@@ -1,0 +1,11 @@
+.DS_Store
+
+*.lock
+*.log
+*.error
+*.tsbuildinfo
+
+node_modules/
+runtimes/
+packages/*/index.js
+packages/*/index.d.ts
