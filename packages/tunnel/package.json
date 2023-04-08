@@ -1,0 +1,36 @@
+{
+  "name": "@stream-toolbox/tunnel",
+  "description": "Forward data bidirectionally between two duplexes, like `a.pipe(b).pipe(a)`, but with better handling for various cases.",
+  "version": "1.0.0",
+  "private": false,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "author": "haochuan9421 <hc199421@gmail.com>",
+  "homepage": "https://github.com/haochuan9421/stream-toolbox/tree/master/packages/tunnel",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:haochuan9421/stream-toolbox.git",
+    "directory": "packages/tunnel"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "stream-toolbox",
+    "tunnel",
+    "duplex",
+    "pipe",
+    "socket",
+    "proxy",
+    "agent"
+  ],
+  "license": "MIT"
+}

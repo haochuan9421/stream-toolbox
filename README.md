@@ -13,6 +13,7 @@
 - ⏳ [@stream-toolbox/limit](https://www.npmjs.com/package/@stream-toolbox/limit): Create a [duplex](https://nodejs.org/api/stream.html#duplex-and-transform-streams) that limits streaming transfer rate.
 - 📈 [@stream-toolbox/monit](https://www.npmjs.com/package/@stream-toolbox/monit): Create a [duplex](https://nodejs.org/api/stream.html#duplex-and-transform-streams) that monits streaming transfer rate.
 - 📋 [@stream-toolbox/multipart](https://www.npmjs.com/package/@stream-toolbox/multipart): A streaming parser for [multipart/form-data](https://www.ietf.org/rfc/rfc2388.txt) type request body.
+- ↔️ [@stream-toolbox/tunnel](https://www.npmjs.com/package/@stream-toolbox/tunnel) Forward data bidirectionally between two [duplex](https://nodejs.org/api/stream.html#duplex-and-transform-streams)es, like `a.pipe(b).pipe(a)`, but with better handling for various cases.
 
 ---
 
@@ -27,3 +28,4 @@
 - ⏳ [@stream-toolbox/limit](https://www.npmjs.com/package/@stream-toolbox/limit): 创建一个[双工流](https://nodejs.org/api/stream.html#duplex-and-transform-streams)用于控制流的传输速度。
 - 📈 [@stream-toolbox/monit](https://www.npmjs.com/package/@stream-toolbox/monit): 创建一个[双工流](https://nodejs.org/api/stream.html#duplex-and-transform-streams)用于监测流的传输速度。
 - 📋 [@stream-toolbox/multipart](https://www.npmjs.com/package/@stream-toolbox/multipart): 一款用于 [multipart/form-data](https://www.ietf.org/rfc/rfc2388.txt) 类型请求体的解析工具。
+- ↔️ [@stream-toolbox/tunnel](https://www.npmjs.com/package/@stream-toolbox/tunnel): 在两个 [duplex](https://nodejs.org/api/stream.html#duplex-and-transform-streams) 间双向转发数据，类似 `a.pipe(b).pipe(a)`，但是对各种情况有更完善的处理。
